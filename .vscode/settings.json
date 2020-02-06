@@ -1,0 +1,8 @@
+{
+    "workbench.colorCustomizations": {
+        "editor.rangeHighlightBackground": "#00AA00",
+        "activityBar.background": "#521929",
+        "titleBar.activeBackground": "#732339",
+        "titleBar.activeForeground": "#FEFBFC"
+    }
+}
