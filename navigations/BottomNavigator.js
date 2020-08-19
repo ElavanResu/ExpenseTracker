@@ -37,7 +37,9 @@ export default BottomNavigator = (props) => {
       initialRouteName='Dashboard'
       shifting={false}
       activeColor={colors.white}
-      barStyle={{ backgroundColor: colors.slateGrey }}
+      inactiveColor={'#ffffff80'}
+      // labelStyle={{ fontSize: 24 }}
+      barStyle={{ backgroundColor: colors.brightBlue }}
       screenOptions={({route}) => ({
         tabBarIcon: ({ focused }) => {
           return (
@@ -51,9 +53,10 @@ export default BottomNavigator = (props) => {
       })}
     >
       {
-        Object.keys(navigationData).map(ele => {
+        Object.keys(navigationData).map((ele, index) => {
           return (
             <Tab.Screen
+              key={`tabScreen${index}`}
               name={ele}
               component={navigationData[ele].component}
               options={navigationData[ele].options}

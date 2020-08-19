@@ -7,14 +7,23 @@
  */
 
 import React from 'react'
+import DatabaseProvider from '@nozbe/watermelondb/DatabaseProvider'
+
 import Navigations from './navigations/index'
+import generateDb from './models'
 
-const App: () => React$Node = (props) => {
-  return (
-    <Navigations
-      {...props}
-    />
-  )
+export default class App extends React.Component {
+  constructor (props) {
+    super(props)
+    this.db = generateDb('expenseTracker')
+  }
+  render () {
+    return (
+      <DatabaseProvider database={this.db}>
+        <Navigations
+          {...this.props}
+        />
+      </DatabaseProvider>
+    )
+  }
 }
-
-export default App

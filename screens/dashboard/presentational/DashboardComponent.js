@@ -8,6 +8,7 @@ import {
 import { colors } from '../../../constants'
 
 const DashboardComponent = (props) => {
+  console.log('props: ', props)
   return (
     <View>
       <Text>Dashboard</Text>

@@ -24,7 +24,7 @@ const AppBar = (props) => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    backgroundColor: colors.slateGrey,
+    backgroundColor: colors.brightBlue,
     paddingRight: 12,
     paddingLeft: 24,
     paddingTop: 12,
