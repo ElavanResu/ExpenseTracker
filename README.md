@@ -1,3 +1,2 @@
-#Expense Tracker
-
-In Development
+Expense Tracker
+=====================================
